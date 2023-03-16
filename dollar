@@ -1,0 +1,9 @@
+print("Для выхода нажмите Y")
+while True:
+    sum = input("Введите сумму для обмена")
+    if sum.lower() == "y":
+        break
+    money = int(sum)
+    cashe = round(money / 75.75)
+    print(cashe)
+print("Работа программы завершена")

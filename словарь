@@ -1,0 +1,13 @@
+#дан англо-русский словарь, сделать из него русско-английский
+#apple - яблоко
+text = input()
+d = {}
+while text != 'end':
+    words = text.strip().split(' - ')
+    en = words[0]
+    rus = words[1]
+    if en not in d.keys():
+        d[en] = rus
+    text = input()
+for key in d.keys():
+    print(d[key], ' - ', key)
